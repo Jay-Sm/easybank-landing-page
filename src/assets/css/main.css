@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import url('header.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply text-[18px] text-dark-blue font-public-sans font-400;
+}
+
+html {
+  @apply h-full;
+}
+
+body {
+  @apply h-screen;
+}
+
+#app {
+  @apply h-full;
+}
+
+.invite-button {
+  @apply text-white py-3 px-8 rounded-full min-w-fit max-w-fit hover:opacity-60 transition-opacity;
+  background: rgb(49, 211, 92);
+  background: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 100%);
+}
