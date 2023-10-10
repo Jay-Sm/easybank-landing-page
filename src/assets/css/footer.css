@@ -1,0 +1,15 @@
+.media-icon {
+  @apply cursor-pointer transition-all fill-white;
+}
+
+.media-icon:hover {
+  @apply fill-[#31c486];
+}
+
+.footer-links {
+  @apply grid grid-cols-2 gap-x-[5rem];
+}
+
+.footer-links p{
+  @apply cursor-pointer hover:text-[#31c486] transition-colors font-300
+}
