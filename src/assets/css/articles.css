@@ -1,0 +1,15 @@
+.article-info {
+  @apply p-5 space-y-2 max-w-full
+}
+
+.thumbnail {
+  @apply w-full h-[11.5rem] rounded-sm
+}
+
+.article-text{
+  @apply text-grayish-blue text-xs
+}
+
+.article-title {
+  @apply font-300 hover:text-[#31c486] cursor-pointer transition-colors
+}

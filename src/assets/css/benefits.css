@@ -1,0 +1,7 @@
+.benefit-card h3 {
+  @apply text-2xl font-300 mb-6 mt-8
+}
+
+.benefit-card p {
+  @apply text-grayish-blue min-w-[10rem] max-w-[18rem]
+}
