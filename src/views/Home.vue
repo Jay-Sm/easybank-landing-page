@@ -2,12 +2,27 @@
   <div>
     <header class="absolute top-0 left-0 right-0 h-[5rem] bg-white z-20 flex items-center justify-between">
       <img src="../assets/images/logo.svg" alt="easybank logo" class="h-6">
-      <nav class="flex space-x-8 text-grayish-blue ml-2">
-        <button>Home</button>
-        <button>About</button>
-        <button>Contact</button>
-        <button>Blog</button>
-        <button>Careers</button>
+      <nav class="flex space-x-8 text-grayish-blue ml-2 h-full">
+        <button class="h-full flex flex-col justify-between items-center">
+          <p class="my-auto">Home</p>
+          <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
+        </button>
+        <button class="h-full flex flex-col justify-between items-center">
+          <p class="my-auto">About</p>
+          <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
+        </button>
+        <button class="h-full flex flex-col justify-between items-center">
+          <p class="my-auto">Contact</p>
+          <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
+        </button>
+        <button class="h-full flex flex-col justify-between items-center">
+          <p class="my-auto">Blog</p>
+          <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
+        </button>
+        <button class="h-full flex flex-col justify-between items-center">
+          <p class="my-auto">Careers</p>
+          <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
+        </button>
       </nav>
       <button class="invite-button ml-2">Request Invite</button>
     </header>

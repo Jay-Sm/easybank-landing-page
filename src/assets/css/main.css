@@ -31,11 +31,13 @@ section {
 }
 
 .invite-button {
-  @apply text-white py-3 px-8 rounded-full min-w-fit max-w-fit hover:opacity-60 transition-opacity;
-  background: rgb(49, 211, 92);
-  background: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 100%);
+  @apply text-white py-3 px-8 rounded-full min-w-fit max-w-fit hover:opacity-60 transition-opacity theme-gradient;
 }
 
 h2 {
   @apply text-4xl font-300;
+}
+
+.theme-gradient {
+  @apply bg-gradient-to-r from-[#31d35c] to-[#2bb7da]
 }

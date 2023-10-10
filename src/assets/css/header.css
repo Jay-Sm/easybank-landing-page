@@ -1,3 +1,7 @@
 nav button {
   @apply hover:!text-dark-blue transition-colors;
 }
+
+button:hover .hovered-bar {
+  @apply w-full;
+}
