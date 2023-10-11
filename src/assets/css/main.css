@@ -27,6 +27,7 @@ body {
 footer,
 section {
   @apply px-[7rem];
+  @apply sm:px-[2rem] xsm:px-[2rem];
 }
 
 .invite-button {
@@ -38,5 +39,21 @@ h2 {
 }
 
 .theme-gradient {
-  @apply bg-gradient-to-r from-[#31d35c] to-[#2bb7da]
+  @apply bg-gradient-to-r from-[#31d35c] to-[#2bb7da];
+}
+
+.intro-img {
+  @apply absolute w-[71rem] h-[56.5rem] -top-[11.5rem] -right-[21rem] pointer-events-none bg-no-repeat bg-[length:80rem];
+  @apply xsm:bg-[length:35rem] xsm:-top-[2.1rem] xsm:h-[60.3rem] xsm:-right-[40rem];
+  @apply sm:bg-[length:50rem] sm:-top-[5.2rem] sm:h-[60.3rem] sm:-right-[30rem];
+  @apply xl:bg-[length:100rem] xl:-top-[15.3rem] xl:h-[60.3rem] xl:-right-[17rem];
+  @apply xxl:bg-[length:100rem] xxl:-top-[15.3rem] xxl:h-[60.3rem] xxl:-right-[17rem];
+
+  background-image: url("../images/bg-intro-desktop.svg");
+}
+
+.mockup-img {
+  @apply absolute z-10 -top-[2.5rem] -right-[8rem] min-w-[47.07rem] w-[47.07rem] select-none pointer-events-none;
+  @apply xsm:min-w-[32rem] xsm:w-[32rem] xsm:-right-[5.3rem] xsm:top-[0.4rem];
+  @apply sm:min-w-[40rem] sm:w-[40rem] sm:-right-[6rem] sm:-top-[1rem];
 }
