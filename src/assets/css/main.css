@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 :root {
-  @apply text-[18px] text-dark-blue font-public-sans font-400;
+  @apply xsm:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] xxl:text-[30px] text-dark-blue font-public-sans font-400;
 }
 
 html {
