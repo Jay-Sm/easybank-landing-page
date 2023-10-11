@@ -1,15 +1,23 @@
+.article {
+  @apply cursor-pointer;
+}
+
 .article-info {
-  @apply p-5 space-y-2 max-w-full
+  @apply p-5 space-y-2 max-w-full;
 }
 
 .thumbnail {
-  @apply w-full h-[11.5rem] rounded-sm
+  @apply w-full h-[11.5rem] rounded-sm;
 }
 
-.article-text{
-  @apply text-grayish-blue text-xs
+.article-text {
+  @apply text-grayish-blue text-xs;
 }
 
 .article-title {
-  @apply font-300 hover:text-[#31c486] cursor-pointer transition-colors
+  @apply font-300 cursor-pointer transition-colors;
+}
+
+.article:hover .article-title {
+  @apply text-[#31c486];
 }

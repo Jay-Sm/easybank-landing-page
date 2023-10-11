@@ -27,8 +27,8 @@
       <button class="invite-button ml-2">Request Invite</button>
     </header>
 
-    <section class="flex flex-row pr-0 overflow-hidden">
-      <div class="w-[40%] h-[44rem] flex flex-col justify-center space-y-[2rem]">
+    <section class="relative flex flex-row pr-0">
+      <div class="w-[40%] h-[45rem] flex flex-col justify-center space-y-[2rem]">
         <h1 class="text-5xl font-300 w-[23rem]">Next generation digital banking</h1>
         <p class="text-grayish-blue w-[25rem]">
           Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting,
@@ -36,13 +36,13 @@
         </p>
         <button class="invite-button">Request Invite</button>
       </div>
-      <div class="relative w-[60%] h-[46rem]">
+      <div class="relative w-[60%] h-[45rem]">
         <div class="overflow-hidden w-full h-full">
           <img src="../assets/images/bg-intro-desktop.svg"
             class="relative min-w-[80.1rem] -top-[11.5rem] -left-[0rem] pointer-events-none">
         </div>
       </div>
-      <img src="../assets/images/image-mockups.png" class="absolute z-10 top-[3rem] right-[0rem] min-w-[39rem] w-[39rem]">
+      <img src="../assets/images/image-mockups.png" class="absolute z-10 -top-[2.5rem] -right-[11rem] min-w-[47.07rem] w-[47.07rem]">
     </section>
 
     <section class="bg-light-grayish-blue z-0 py-[6rem] flex flex-col justify-center items-center space-y-16">
@@ -93,7 +93,7 @@
       <h2>Latest Articles</h2>
 
       <div class="flex justify-between">
-        <div class="inline-block w-[14.7rem]">
+        <div class="inline-block w-[14.7rem] article">
           <img src="../assets/images/image-currency.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Claire Robinson</p>
@@ -103,7 +103,7 @@
               only receive money in a single`) }}</p>
           </div>
         </div>
-        <div class="inline-block w-[14.7rem]">
+        <div class="inline-block w-[14.7rem] article">
           <img src="../assets/images/image-restaurant.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Wilson Hutton</p>
@@ -112,7 +112,7 @@
               separate out your spending and set realistic limits each month. That means you`) }}</p>
           </div>
         </div>
-        <div class="inline-block w-[14.7rem]">
+        <div class="inline-block w-[14.7rem] article">
           <img src="../assets/images/image-plane.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Wilson Hutton</p>
@@ -121,7 +121,7 @@
               why we don’t charge any fees on purchases while you’re abroad. We’ll even show you`) }}</p>
           </div>
         </div>
-        <div class="inline-block w-[14.7rem]">
+        <div class="inline-block w-[14.7rem] article">
           <img src="../assets/images/image-confetti.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Claire Robinson</p>
