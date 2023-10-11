@@ -1,5 +1,9 @@
+.article-grid {
+  @apply grid grid-flow-row grid-cols-4 xsm:grid-cols-2 xsm:justify-items-center;
+}
+
 .article {
-  @apply cursor-pointer;
+  @apply cursor-pointer inline-block min-w-[14.7rem] w-[14.7rem] xsm:w-[18rem];
 }
 
 .article-info {
@@ -7,7 +11,7 @@
 }
 
 .thumbnail {
-  @apply w-full h-[11.5rem] rounded-sm;
+  @apply min-w-full w-full h-[11.5rem] rounded-sm;
 }
 
 .article-text {

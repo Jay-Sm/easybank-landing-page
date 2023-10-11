@@ -88,8 +88,8 @@
 
       <h2>Latest Articles</h2>
 
-      <div class="flex justify-between">
-        <div class="inline-block w-[14.7rem] article">
+      <div class="article-grid">
+        <div class="article">
           <img src="../assets/images/image-currency.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Claire Robinson</p>
@@ -99,7 +99,7 @@
               only receive money in a single`) }}</p>
           </div>
         </div>
-        <div class="inline-block w-[14.7rem] article">
+        <div class="article">
           <img src="../assets/images/image-restaurant.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Wilson Hutton</p>
@@ -108,7 +108,7 @@
               separate out your spending and set realistic limits each month. That means you`) }}</p>
           </div>
         </div>
-        <div class="inline-block w-[14.7rem] article">
+        <div class="article">
           <img src="../assets/images/image-plane.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Wilson Hutton</p>
@@ -117,7 +117,7 @@
               why we don’t charge any fees on purchases while you’re abroad. We’ll even show you`) }}</p>
           </div>
         </div>
-        <div class="inline-block w-[14.7rem] article">
+        <div class="article">
           <img src="../assets/images/image-confetti.jpg" class="thumbnail">
           <div class="article-info">
             <p class="article-text">By Claire Robinson</p>
