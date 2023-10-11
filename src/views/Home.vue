@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="absolute top-0 left-0 right-0 h-[5rem] bg-white z-20 flex items-center justify-between">
+    <header class="absolute top-0 left-0 right-0 h-[5rem] pl-[7rem] pr-[9.7rem] bg-white z-20 flex items-center justify-between">
       <img src="../assets/images/logo.svg" alt="easybank logo" class="h-6">
       <nav class="flex space-x-8 text-grayish-blue ml-2 h-full">
         <button class="h-full flex flex-col justify-between items-center">
@@ -28,7 +28,7 @@
     </header>
 
     <section class="relative flex flex-row pr-0">
-      <div class="w-[40%] h-[45rem] flex flex-col justify-center space-y-[2rem]">
+      <div class="w-[41%] h-[45rem] flex flex-col justify-center space-y-[2rem]">
         <h1 class="text-5xl font-300 w-[23rem]">Next generation digital banking</h1>
         <p class="text-grayish-blue w-[25rem]">
           Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting,
@@ -36,13 +36,11 @@
         </p>
         <button class="invite-button">Request Invite</button>
       </div>
-      <div class="relative w-[60%] h-[45rem]">
-        <div class="overflow-hidden w-full h-full">
+      <div class="relative overflow-hidden w-[59%] h-[45rem]">
           <img src="../assets/images/bg-intro-desktop.svg"
-            class="relative min-w-[80.1rem] -top-[11.5rem] -left-[0rem] pointer-events-none">
-        </div>
+            class="absolute min-w-[80.1rem] -top-[11.5rem] -left-[4.5rem] pointer-events-none">
       </div>
-      <img src="../assets/images/image-mockups.png" class="absolute z-10 -top-[2.5rem] -right-[11rem] min-w-[47.07rem] w-[47.07rem]">
+      <img src="../assets/images/image-mockups.png" class="absolute z-10 -top-[2.5rem] -right-[8rem] min-w-[47.07rem] w-[47.07rem]">
     </section>
 
     <section class="bg-light-grayish-blue z-0 py-[6rem] flex flex-col justify-center items-center space-y-16">

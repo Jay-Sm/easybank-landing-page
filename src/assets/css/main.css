@@ -24,7 +24,6 @@ body {
   @apply h-full;
 }
 
-header,
 footer,
 section {
   @apply px-[7rem];
