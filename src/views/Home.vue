@@ -25,11 +25,14 @@
           <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
         </button>
       </nav>
-      <button v-if="windowWidth <= 759" class="min-w-10 w-10 h-10 flex justify-center items-center">
-        <img src="../assets/images/icon-hamburger.svg" class="w-full">
+      <button v-if="windowWidth <= 759" @click="modalOpen = !modalOpen"
+        class="min-w-10 w-10 h-10 flex justify-center items-center hover:bg-grayish-blue hover:bg-opacity-20 rounded-full transition-all">
+        <img src="../assets/images/icon-hamburger.svg" class="w-10/12">
       </button>
       <button v-if="windowWidth > 759" class="invite-button ml-2">Request Invite</button>
     </header>
+
+    <mobileModal v-if="modalOpen && windowWidth < 759" @close-modal="modalOpen = !modalOpen" />
 
     <section class="relative flex flex-row pr-0 t:px-0 m:px-0 t:flex-col m:flex-col t:items-center m:items-center">
       <div
@@ -45,10 +48,12 @@
       <img src="../assets/images/image-mockups.png" class="mockup-img">
     </section>
 
-    <section class="bg-light-grayish-blue z-0 py-[6rem] flex flex-col justify-center items-center space-y-16 m:space-y-10">
+    <section
+      class="bg-light-grayish-blue z-0 py-[6rem] flex flex-col justify-center items-center space-y-16 m:space-y-10">
       <div class="flex flex-col space-y-6 w-full m:text-center">
         <h2>Why choose Easybank?</h2>
-        <p class="max-w-[35.5rem] min-w-[20rem] text-grayish-blue">We leverage Open Banking to turn your bank account into your financial
+        <p class="max-w-[35.5rem] min-w-[20rem] text-grayish-blue">We leverage Open Banking to turn your bank account into
+          your financial
           hub. Control
           your finances like never before.</p>
       </div>
@@ -133,7 +138,8 @@
       </div>
     </section>
 
-    <footer class="py-[3rem] m:py-[2rem] m:h-[40rem] bg-dark-blue text-white flex justify-between m:flex-col m:justify-center m:items-center">
+    <footer
+      class="py-[3rem] m:py-[2rem] m:h-[40rem] bg-dark-blue text-white flex justify-between m:flex-col m:justify-center m:items-center">
       <div class="flex flex-col space-y-14 m:mb-10 m:space-y-10 m:items-center">
         <img src="../assets/images/logo-white.svg" alt="" class="logo">
         <div class="flex justify-between w-[165px]">
@@ -178,11 +184,20 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
+import mobileModal from '../components/mobileModal.vue';
 
 const windowWidth = ref(window.innerWidth)
 const onResize = () => windowWidth.value = window.innerWidth
 window.addEventListener('resize', onResize)
+
+const modalOpen = ref(false)
+watchEffect(() => {
+  if (windowWidth.value > 759) {
+    modalOpen.value = false
+  }
+  console.log(modalOpen.value)
+})
 
 
 function maxLength(str) {
