@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="absolute top-0 left-0 right-0 space-x-4 h-[5rem] pl-[7rem] pr-[9.7rem] sm:pl-[2rem] sm:pr-[8.6rem] xsm:pl-[2rem] xsm:pr-[4rem] m:px-[2rem] bg-white z-20 flex items-center justify-between select-none">
+      class="absolute top-0 left-0 right-0 space-x-4 h-[5rem] pl-[7rem] pr-[9.7rem] sm:pl-[2rem] sm:pr-[8.6rem] xsm:pl-[2rem] xsm:pr-[4rem] t:px-[2rem] m:px-[2rem] bg-white z-20 flex items-center justify-between select-none">
       <img src="../assets/images/logo.svg" alt="easybank logo" class="h-6">
       <nav v-if="windowWidth > 759" class="flex space-x-8 text-grayish-blue ml-2 h-full">
         <button class="h-full flex flex-col justify-between items-center">
@@ -25,16 +25,17 @@
           <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
         </button>
       </nav>
-      <button v-if="windowWidth < 759" class="min-w-10 w-10 h-10 flex justify-center items-center">
+      <button v-if="windowWidth <= 759" class="min-w-10 w-10 h-10 flex justify-center items-center">
         <img src="../assets/images/icon-hamburger.svg" class="w-full">
       </button>
       <button v-if="windowWidth > 759" class="invite-button ml-2">Request Invite</button>
     </header>
 
-    <section class="relative flex flex-row pr-0">
-      <div class="w-[41%] h-[45rem] sm:h-[36rem] xsm:h-[36rem] flex flex-col justify-center space-y-[2rem]">
+    <section class="relative flex flex-row pr-0 t:px-0 m:px-0 t:flex-col m:flex-col t:items-center m:items-center">
+      <div
+        class="w-[41%] h-[45rem] sm:h-[36rem] xsm:h-[36rem] t:mb-32 m:mb-32 flex flex-col justify-center t:justify-end m:justify-end t:items-center m:items-center t:text-center m:text-center space-y-[2rem]">
         <h1 class="text-5xl font-300 w-[23rem]">Next generation digital banking</h1>
-        <p class="text-grayish-blue w-[25rem]">
+        <p class="text-grayish-blue w-[25rem] t:w-[22rem] m:w-[22rem]">
           Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting,
           investing, and much more.
         </p>

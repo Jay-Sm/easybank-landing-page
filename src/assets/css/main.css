@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 :root {
-  @apply m:text-[14px] xsm:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] xxl:text-[30px] text-dark-blue font-public-sans font-400;
+  @apply t:text-[14px] xsm:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] xxl:text-[30px] text-dark-blue font-public-sans font-400;
 }
 
 html {
@@ -27,7 +27,7 @@ body {
 footer,
 section {
   @apply px-[7rem];
-  @apply sm:px-[2rem] xsm:px-[2rem] m:px-[2rem];
+  @apply sm:px-[2rem] xsm:px-[2rem] t:px-[2rem] m:px-[2rem];
 }
 
 .invite-button {
@@ -54,6 +54,8 @@ h2 {
 
 .mockup-img {
   @apply absolute z-10 -top-[2.5rem] -right-[8rem] min-w-[47.07rem] w-[47.07rem] select-none pointer-events-none;
+  @apply m:min-w-[26.2rem] m:w-[26.2rem] m:right-[0rem] m:left-[0rem] m:mx-auto m:-top-[4.3rem];
+  @apply t:min-w-[26.2rem] t:w-[26.2rem] t:right-[0rem] t:left-[0rem] t:mx-auto t:-top-[4.3rem];
   @apply xsm:min-w-[32rem] xsm:w-[32rem] xsm:-right-[5.3rem] xsm:top-[0.4rem];
   @apply sm:min-w-[40rem] sm:w-[40rem] sm:-right-[6rem] sm:-top-[1rem];
 }
