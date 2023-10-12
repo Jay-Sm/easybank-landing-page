@@ -33,7 +33,7 @@
 
     <section class="relative flex flex-row pr-0 t:px-0 m:px-0 t:flex-col m:flex-col t:items-center m:items-center">
       <div
-        class="w-[41%] h-[45rem] sm:h-[36rem] xsm:h-[36rem] t:mb-32 m:mb-32 flex flex-col justify-center t:justify-end m:justify-end t:items-center m:items-center t:text-center m:text-center space-y-[2rem]">
+        class="w-[41%] t:w-full m:w-full h-[45rem] sm:h-[36rem] xsm:h-[36rem] t:mb-32 m:mb-32 flex flex-col justify-center t:justify-end m:justify-end t:items-center m:items-center t:text-center m:text-center space-y-[2rem]">
         <h1 class="text-5xl font-300 w-[23rem]">Next generation digital banking</h1>
         <p class="text-grayish-blue w-[25rem] t:w-[22rem] m:w-[22rem]">
           Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting,
@@ -45,15 +45,15 @@
       <img src="../assets/images/image-mockups.png" class="mockup-img">
     </section>
 
-    <section class="bg-light-grayish-blue z-0 py-[6rem] flex flex-col justify-center items-center space-y-16">
-      <div class="flex flex-col space-y-6 w-full">
+    <section class="bg-light-grayish-blue z-0 py-[6rem] flex flex-col justify-center items-center space-y-16 m:space-y-10">
+      <div class="flex flex-col space-y-6 w-full m:text-center">
         <h2>Why choose Easybank?</h2>
-        <p class="w-[35.5rem] text-grayish-blue">We leverage Open Banking to turn your bank account into your financial
+        <p class="max-w-[35.5rem] min-w-[20rem] text-grayish-blue">We leverage Open Banking to turn your bank account into your financial
           hub. Control
           your finances like never before.</p>
       </div>
 
-      <div class="flex justify-between w-full space-x-4">
+      <div class="flex justify-between m:justify-center w-full space-x-4 m:space-x-0 m:flex-wrap">
         <div class="benefit-card">
           <img src="../assets/images/icon-online.svg" class="w-16 h-16">
           <h3>Online Banking</h3>
@@ -90,7 +90,7 @@
 
     <section class="w-full py-[4rem] space-y-12">
 
-      <h2>Latest Articles</h2>
+      <h2 class="m:text-center">Latest Articles</h2>
 
       <div class="article-grid">
         <div class="article">

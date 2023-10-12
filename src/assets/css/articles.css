@@ -1,16 +1,15 @@
 .article-grid {
-  @apply grid grid-flow-row grid-cols-4 justify-items-center xsm:grid-cols-4 t:grid-cols-2;
+  @apply grid grid-flow-row grid-cols-4 justify-items-center xsm:grid-cols-4 t:grid-cols-2 m:grid-cols-1;
 }
-@media (max-width: 900px) {
+@media ((min-width: 659px) and (max-width: 900px)) {
   .article-grid {
-    @apply grid-cols-2
+    @apply grid-cols-2;
   }
 }
 
 .article {
-  @apply cursor-pointer inline-block min-w-[14.7rem] w-[14.7rem] xsm:w-[14.7rem] t:w-[18rem];
+  @apply cursor-pointer inline-block min-w-[14.7rem] w-[14.7rem] xsm:w-[14.7rem] t:w-[18rem] m:w-[18rem];
 }
-
 
 .article-info {
   @apply p-5 space-y-2 max-w-full;
