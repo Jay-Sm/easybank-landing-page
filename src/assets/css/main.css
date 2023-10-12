@@ -38,6 +38,10 @@ h2 {
   @apply text-4xl font-300;
 }
 
+.logo {
+  @apply w-[8.056rem] h-[1.111rem]
+}
+
 .theme-gradient {
   @apply bg-gradient-to-r from-[#31d35c] to-[#2bb7da];
 }

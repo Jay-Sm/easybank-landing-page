@@ -7,7 +7,7 @@
 }
 
 .footer-links {
-  @apply grid grid-cols-2 gap-x-[5rem];
+  @apply grid grid-cols-2 gap-x-[5rem] t:gap-x-2 m:grid-cols-1 m:text-center m:gap-x-0 m:gap-y-[1.5rem];
 }
 
 .footer-links p{

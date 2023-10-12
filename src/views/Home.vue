@@ -2,7 +2,7 @@
   <div>
     <header
       class="absolute top-0 left-0 right-0 space-x-4 h-[5rem] pl-[7rem] pr-[9.7rem] sm:pl-[2rem] sm:pr-[8.6rem] xsm:pl-[2rem] xsm:pr-[4rem] t:px-[2rem] m:px-[2rem] bg-white z-20 flex items-center justify-between select-none">
-      <img src="../assets/images/logo.svg" alt="easybank logo" class="h-6">
+      <img src="../assets/images/logo.svg" alt="easybank logo" class="logo">
       <nav v-if="windowWidth > 759" class="flex space-x-8 text-grayish-blue ml-2 h-full">
         <button class="h-full flex flex-col justify-between items-center">
           <p class="my-auto">Home</p>
@@ -133,10 +133,10 @@
       </div>
     </section>
 
-    <footer class="py-[3rem]  bg-dark-blue text-white flex justify-between">
-      <div class="flex flex-col space-y-14">
-        <img src="../assets/images/logo-white.svg" alt="" class="">
-        <div class="flex justify-between w-[120%]">
+    <footer class="py-[3rem] m:py-[2rem] m:h-[40rem] bg-dark-blue text-white flex justify-between m:flex-col m:justify-center m:items-center">
+      <div class="flex flex-col space-y-14 m:mb-10 m:space-y-10 m:items-center">
+        <img src="../assets/images/logo-white.svg" alt="" class="logo">
+        <div class="flex justify-between w-[165px]">
           <svg class="media-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <path
               d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
@@ -167,7 +167,7 @@
         <p>Blog</p>
         <p>Privacy Policy</p>
       </div>
-      <div class="flex flex-col items-end space-y-6">
+      <div class="flex flex-col items-end space-y-6 m:mt-8 m:items-center">
         <div class="bg-white w-fit h-fit rounded-full">
           <button class="invite-button">Request Invite</button>
         </div>

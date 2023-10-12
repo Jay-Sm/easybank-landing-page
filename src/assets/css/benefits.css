@@ -1,9 +1,9 @@
 .benefit-card {
-  @apply m:flex m:flex-col m:items-center m:text-center m:pt-3 m:px-2 
+  @apply m:flex m:flex-col m:items-center m:text-center m:pt-5 m:px-2 
 }
 
 .benefit-card h3 {
-  @apply text-2xl font-300 mb-6 mt-8
+  @apply text-2xl font-300 mb-6 mt-8 m:mt-5
 }
 
 .benefit-card p {
