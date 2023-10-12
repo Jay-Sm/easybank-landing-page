@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 :root {
-  @apply xsm:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] xxl:text-[30px] text-dark-blue font-public-sans font-400;
+  @apply m:text-[14px] xsm:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] xxl:text-[30px] text-dark-blue font-public-sans font-400;
 }
 
 html {
@@ -27,7 +27,7 @@ body {
 footer,
 section {
   @apply px-[7rem];
-  @apply sm:px-[2rem] xsm:px-[2rem];
+  @apply sm:px-[2rem] xsm:px-[2rem] m:px-[2rem];
 }
 
 .invite-button {

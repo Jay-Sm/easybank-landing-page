@@ -1,5 +1,5 @@
 .article-grid {
-  @apply grid grid-flow-row grid-cols-4 xsm:grid-cols-2 xsm:justify-items-center;
+  @apply grid grid-flow-row grid-cols-4 xsm:grid-cols-2 xsm:justify-items-center m:grid-cols-1 m:justify-items-center;
 }
 
 .article {

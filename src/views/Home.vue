@@ -1,9 +1,9 @@
 <template>
   <div>
     <header
-      class="absolute top-0 left-0 right-0 space-x-4 h-[5rem] pl-[7rem] pr-[9.7rem] sm:pl-[2rem] sm:pr-[8.6rem] xsm:pl-[2rem] xsm:pr-[4rem] bg-white z-20 flex items-center justify-between select-none">
+      class="absolute top-0 left-0 right-0 space-x-4 h-[5rem] pl-[7rem] pr-[9.7rem] sm:pl-[2rem] sm:pr-[8.6rem] xsm:pl-[2rem] xsm:pr-[4rem] m:px-[2rem] bg-white z-20 flex items-center justify-between select-none">
       <img src="../assets/images/logo.svg" alt="easybank logo" class="h-6">
-      <nav class="flex space-x-8 text-grayish-blue ml-2 h-full">
+      <nav v-if="windowWidth > 759" class="flex space-x-8 text-grayish-blue ml-2 h-full">
         <button class="h-full flex flex-col justify-between items-center">
           <p class="my-auto">Home</p>
           <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
@@ -25,7 +25,10 @@
           <div class="hovered-bar h-1 w-0 theme-gradient transition-all"></div>
         </button>
       </nav>
-      <button class="invite-button ml-2">Request Invite</button>
+      <button v-if="windowWidth < 759" class="min-w-10 w-10 h-10 flex justify-center items-center">
+        <img src="../assets/images/icon-hamburger.svg" class="w-full">
+      </button>
+      <button v-if="windowWidth > 759" class="invite-button ml-2">Request Invite</button>
     </header>
 
     <section class="relative flex flex-row pr-0">
@@ -37,7 +40,7 @@
         </p>
         <button class="invite-button">Request Invite</button>
       </div>
-      <div class="intro-img"></div>
+      <div v-if="windowWidth > 759" class="intro-img"></div>
       <img src="../assets/images/image-mockups.png" class="mockup-img">
     </section>
 
@@ -174,6 +177,12 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const windowWidth = ref(window.innerWidth)
+const onResize = () => windowWidth.value = window.innerWidth
+window.addEventListener('resize', onResize)
+
 
 function maxLength(str) {
   const maxLength = 122
