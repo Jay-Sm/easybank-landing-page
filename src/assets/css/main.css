@@ -46,7 +46,7 @@ h2 {
   @apply bg-gradient-to-r from-[#31d35c] to-[#2bb7da];
 }
 
-.intro-img {
+.intro-img-desktop {
   @apply absolute w-[71rem] h-[56.5rem] -top-[11.5rem] -right-[21rem] pointer-events-none bg-no-repeat bg-[length:80rem];
   @apply xsm:bg-[length:35rem] xsm:-top-[2.1rem] xsm:h-[60.3rem] xsm:-right-[40rem];
   @apply sm:bg-[length:50rem] sm:-top-[5.2rem] sm:h-[60.3rem] sm:-right-[30rem];
@@ -54,6 +54,12 @@ h2 {
   @apply xxl:bg-[length:100rem] xxl:-top-[15.3rem] xxl:h-[60.3rem] xxl:-right-[17rem];
 
   background-image: url("../images/bg-intro-desktop.svg");
+}
+
+.intro-img-mobile {
+  @apply absolute w-[110%] h-[35rem] -top-[6.8rem] -right-[10%] pointer-events-none bg-no-repeat bg-[length:43rem] bg-right;
+
+  background-image: url("../images/bg-intro-mobile.svg");
 }
 
 .mockup-img {

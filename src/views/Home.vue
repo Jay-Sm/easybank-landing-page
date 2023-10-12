@@ -44,8 +44,10 @@
         </p>
         <button class="invite-button">Request Invite</button>
       </div>
-      <div v-if="windowWidth > 759" class="intro-img"></div>
+      <div v-if="windowWidth > 759" class="intro-img-desktop"></div>
+      <div v-if="windowWidth < 759" class="intro-img-mobile"></div>
       <img src="../assets/images/image-mockups.png" class="mockup-img">
+
     </section>
 
     <section
